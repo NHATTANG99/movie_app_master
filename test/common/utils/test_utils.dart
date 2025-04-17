@@ -5,14 +5,15 @@ import 'package:movie_app/common/constants/languages.dart';
 import 'package:movie_app/presentation/app_localizations.dart';
 
 materialWrapperWithBlocs(
-  Widget child,
-  List<BlocProvider> blocProviders,
-  NavigatorObserver observer,
-) {
+    Widget child,
+    List<BlocProvider> blocProviders,
+    NavigatorObserver observer,
+    ) {
   return MultiBlocProvider(
     providers: blocProviders,
     child: MaterialApp(
-      locale: Locale(Languages.languages[0].code),
+      // Sử dụng 'vi' làm locale mặc định nếu cần thiết
+      locale: Locale(Languages.languages[1].code), // Tiếng Việt (vi) mặc định
       supportedLocales: Languages.languages.map((e) => Locale(e.code)).toList(),
       localizationsDelegates: [
         AppLocalizations.delegate,

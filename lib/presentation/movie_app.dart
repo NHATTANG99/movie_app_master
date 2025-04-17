@@ -73,9 +73,9 @@ class _MovieAppState extends State<MovieApp> {
                   theme: ThemeData(
                     unselectedWidgetColor: AppColor.royalBlue,
                     primaryColor:
-                        theme == Themes.dark ? AppColor.vulcan : Colors.white,
+                    theme == Themes.dark ? AppColor.vulcan : Colors.white,
                     scaffoldBackgroundColor:
-                        theme == Themes.dark ? AppColor.vulcan : Colors.white,
+                    theme == Themes.dark ? AppColor.vulcan : Colors.white,
                     brightness: theme == Themes.dark
                         ? Brightness.dark
                         : Brightness.light,
@@ -84,7 +84,7 @@ class _MovieAppState extends State<MovieApp> {
                         : ColorScheme.light().copyWith(secondary: AppColor.royalBlue),
                     cardTheme: CardTheme(
                       color:
-                          theme == Themes.dark ? Colors.white : AppColor.vulcan,
+                      theme == Themes.dark ? Colors.white : AppColor.vulcan,
                     ),
                     visualDensity: VisualDensity.adaptivePlatformDensity,
                     textTheme: theme == Themes.dark
@@ -105,7 +105,7 @@ class _MovieAppState extends State<MovieApp> {
                     ),
                   ),
                   supportedLocales:
-                      Languages.languages.map((e) => Locale(e.code)).toList(),
+                  Languages.languages.map((e) => Locale(e.code)).toList(),
                   locale: locale,
                   localizationsDelegates: [
                     AppLocalizations.delegate,
@@ -135,3 +135,4 @@ class _MovieAppState extends State<MovieApp> {
     );
   }
 }
+

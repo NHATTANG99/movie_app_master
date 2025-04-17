@@ -12,6 +12,7 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@mipmap/logo" />
+            android:src="@mipmap/logo"
+            android:scaleType="fitXY" />
     </item>
 </layer-list>
